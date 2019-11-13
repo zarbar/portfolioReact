@@ -6,7 +6,7 @@ import Landing from './Landing/Landing';
 import About from './About/About';
 import Parallex from './Parallex/Parallex';
 import Portfolio from './Portfolio/Portfolio';
-import parallex1 from './Parallex/yayoi3.jpg';
+import ContactForm from './ContactForm/ContactForm';
 
 function App() {
   document.title = "Zara's Portfolio";
@@ -18,6 +18,7 @@ function App() {
       <Parallex img={'parallex1'} />
       <Portfolio />
       <Parallex img={'parallex2'} />
+      <ContactForm />
 
     </div>
   );
