@@ -8,21 +8,9 @@ export default function About() {
             <div class="container-fluid center-align-text" id="about-section">
                 <h3>Hi There!</h3>
                 <p>
-                    I began training as a front and back end developer in April 2019.
-                My previous experience is in communications and marketing.<br /><br />
+                    I began training as a front and back end developer in April 2019. I use HTML 5, CSS (Bootstrap), Javascript (React, Jquery, Handlebars, Node, Express) for front-end development, Node and Express for back-end development and MySQL and MongoDB for databases.<br /><br />
 
-                    Working alongside web developers made me curious about their work. After extensive
-                    research
-                    and
-                    training, which involved an online course with Codecamdemy, and a bootcamp with
-                    Kodiri, I
-                    finally
-                decided to become one!<br /><br />
-
-                    I also lived in Japan for 5 years which was really fun. Studying Japanese gave me
-                    the
-                    confidence to
-                    start learn programming languages.
+                    My previous experience is in communications and marketing. I was born and raised in London and spent 5 years living and working in Japan.
             </p>
                 <span>
                     <Button type="button" className="btn" id="resume-button">

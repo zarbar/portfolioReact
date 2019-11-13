@@ -14,33 +14,21 @@
     padding-top: 1em;
     margin-left: 6em;
     margin-right: 6em;
-    background: rgba(255, 255, 255, 0.72);
     border-radius: 5px;
-    color: black;
-    /* text-align: center; */
+    color: whitesmoke;
     word-wrap: break-word;
     flex: 1;
 }
 
 
-@media screen and (max-width: 950px) {
-    #about-section {
-        margin: 0.2em;
-        background: rgba(255, 255, 255, 0.72);
-        border-radius: 5px;
-    }
-}
-
 h3 {
     font-family: Share Tech Mono;
     font-weight: bold;
-    text-align: left;
     padding-bottom: 1em;
 }
 
 p {
     font-family: Lato;
-    text-align: left;
 }
 
 #resume-button {
@@ -49,7 +37,7 @@ p {
     margin: 0.8em;
     transition-duration: 0.4s;
     border: 2px solid #327A83;
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 #resume-button:hover {

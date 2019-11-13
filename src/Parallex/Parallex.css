@@ -1,0 +1,19 @@
+#parallex1 {
+    background-image: url('yayoi3.jpg');
+}
+
+
+#parallex2 {
+    background-image: url('yayoi2.png');
+}
+
+.parallexImage {
+    padding-top: 12em;
+    padding-bottom: 5em;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
