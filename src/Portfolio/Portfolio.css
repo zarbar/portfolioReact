@@ -1,22 +1,14 @@
-#section3 {
-    padding-top: 50px;
-    padding-bottom: 5em;
+#portfolioSection {
     height: auto;
-    color: #fff;
     background-color: #327A83;
-    text-align: center;
-    border-radius: 3px;
 }
-
 .container-life {
     position: relative;
     width: 50%;
 }
-
 .container-life:hover .overlay-life {
     opacity: 1;
 }
-
 .overlay-life {
     position: absolute;
     top: 0;
@@ -30,7 +22,6 @@
     background-color: #242424;
     border-radius: 5px;
 }
-
 .text-life {
     color: whitesmoke;
     font-size: 12pt;
@@ -44,41 +35,12 @@
     text-align: center;
     border-radius: 5px;
 }
-
-#button-life {
-    font-family: Share Tech Mono;
-    color: black;
-    margin: 0.8em;
-    margin-top: 2em;
-    transition-duration: 0.4s;
-    border: 2px solid #327A83;
-    background: #DDDDDD;
-}
-
-#button-life:hover {
-    color: whitesmoke;
-    background-color: #327A83;
-}
-
-/* 
-#button-life-port {
-    margin-top: 0.5em;
-} */
-
-#portfolio-box {
-    background: #327A83;
-    border-radius: 5px;
-    margin: 1em;
-}
-
 .port-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 .image-life {
-    /* display: block; */
     width: 100%;
     height: auto;
     border: gray;
@@ -86,33 +48,26 @@
     border-style: solid;
     border-radius: 5px;
 }
-
-
 @media screen and (max-width: 1170px) {
     .container-life {
         width: 70%;
     }
 }
-
 @media screen and (max-width: 985px) {
     .container-life {
         width: 90%;
     }
 }
-
 @media screen and (max-width: 790px) {
     .container-life {
         width: 100%;
     }
 }
-
 @media screen and (max-width: 710px) {
     .text-life {
         font-size: 10px;
     }
 }
-
-
 @media screen and (max-width: 630px) {
     #button-life {
         margin: 0.2em;
@@ -128,4 +83,7 @@
         border-radius: 5px;
     }
 
+}
+.buttonBox {
+    display: inline-block;
 }

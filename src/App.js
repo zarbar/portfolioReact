@@ -7,6 +7,7 @@ import About from './About/About';
 import Parallex from './Parallex/Parallex';
 import Portfolio from './Portfolio/Portfolio';
 import ContactForm from './ContactForm/ContactForm';
+import Footer from './Footer/Footer';
 
 function App() {
   document.title = "Zara's Portfolio";
@@ -19,7 +20,7 @@ function App() {
       <Portfolio />
       <Parallex img={'parallex2'} />
       <ContactForm />
-
+      <Footer />
     </div>
   );
 }

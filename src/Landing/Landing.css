@@ -1,16 +1,15 @@
 .parallax-background {
-    /* position: fixed; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
 }
 
 #landing-page {
     background-image: url('yayoi.jpg');
     padding-top: 5em;
     padding-bottom: 5em;
+    height: 100vh;
 }
 
 

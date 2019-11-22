@@ -1,0 +1,39 @@
+#navBarList {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    color: whitesmoke;
+    background: #343a40;
+    font-family: 'Lato';
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navItem:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#navAbout:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background: #FC4445;
+}
+
+#brand {
+    font-family: Share Tech Mono;
+    font-size: 1.2em;
+}
+
+.navBox {
+    padding: 10px;
+}

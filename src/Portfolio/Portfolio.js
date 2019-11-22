@@ -1,7 +1,8 @@
 import React from 'react';
 import './Portfolio.css';
-import PortfolioItem from './PortfolioItems/PortfolioItem'
+import PortfolioItem from './PortfolioItem';
 import totalRickall from './totalRickall.jpg';
+import totalRickallMobile from './totalRickallMini.jpg';
 
 export default function Portfolio() {
 
@@ -11,13 +12,14 @@ export default function Portfolio() {
             title: 'Total-Rickall: A Total Rip-off Game',
             descriptionWhat: 'A simple game I designed based on the \'Total Rickall\' episode of Rick & Morty.',
             descriptionHow: 'I used HTML, CSS, Javascript and jQuery. I pulled data from a public Rick & Morty API.',
-            image: totalRickall
+            imageDesktop: totalRickall,
+            imageMobile: totalRickallMobile
         }
     ]
 
     return (
-        <div id="section3" className="container-fluid">
-            <div className="container-fluid center-align-text" id="portfolio-box">
+        <div id="portfolioSection" className="container-fluid section">
+            <div className="container-fluid center-align-text titleText" id="portfolio-box">
                 <div className="port-container">
                     <h3>Portfolio</h3>
                     <PortfolioItem
@@ -25,7 +27,8 @@ export default function Portfolio() {
                         title={portfolioItems[0].title}
                         descriptionWhat={portfolioItems[0].descriptionWhat}
                         descriptionHow={portfolioItems[0].descriptionHow}
-                        image={portfolioItems[0].image}
+                        imageDesktop={portfolioItems[0].imageDesktop}
+                        imageMobile={portfolioItems[0].imageMobile}
                     />
                 </div>
             </div>
