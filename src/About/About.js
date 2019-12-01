@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import Button from 'react-bootstrap/Button';
 
 export default function About() {
     return (
@@ -15,11 +14,7 @@ export default function About() {
                     My previous experience is in communications and marketing. I was born and raised in London and spent 5 years living and working in Japan.
             </p>
             </div>
-            <span>
-                <Button type="button" className="btn" id="zara-button">
-                    Download my resume
-                </Button>
-            </span>
+
 
         </div>
     )

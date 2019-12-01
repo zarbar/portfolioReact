@@ -2,13 +2,15 @@
     height: auto;
     background-color: #327A83;
 }
+
 .container-life {
     position: relative;
-    width: 50%;
 }
+
 .container-life:hover .overlay-life {
     opacity: 1;
 }
+
 .overlay-life {
     position: absolute;
     top: 0;
@@ -22,6 +24,7 @@
     background-color: #242424;
     border-radius: 5px;
 }
+
 .text-life {
     color: whitesmoke;
     font-size: 12pt;
@@ -35,11 +38,14 @@
     text-align: center;
     border-radius: 5px;
 }
+
 .port-container {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
+    /* z-index: 2; */
 }
+
 .image-life {
     width: 100%;
     height: auto;
@@ -48,26 +54,31 @@
     border-style: solid;
     border-radius: 5px;
 }
+
 @media screen and (max-width: 1170px) {
     .container-life {
         width: 70%;
     }
 }
+
 @media screen and (max-width: 985px) {
     .container-life {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 790px) {
     .container-life {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 710px) {
     .text-life {
         font-size: 10px;
     }
 }
+
 @media screen and (max-width: 630px) {
     #button-life {
         margin: 0.2em;
@@ -84,6 +95,7 @@
     }
 
 }
+
 .buttonBox {
     display: inline-block;
 }

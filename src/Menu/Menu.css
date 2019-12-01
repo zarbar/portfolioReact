@@ -1,0 +1,30 @@
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background: #343a40;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex: 1;
+}
+
+.menuItem {
+    color: whitesmoke;
+    flex: 1;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+.topItem {
+    margin-top: 4em;
+}
+
+.menuIcons {
+    margin-bottom: 0px;
+}

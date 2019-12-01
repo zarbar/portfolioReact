@@ -1,19 +1,26 @@
 #navBarList {
     width: 100%;
     display: flex;
-    margin: 0;
     color: whitesmoke;
     background: #343a40;
     font-family: 'Lato';
     position: fixed;
     z-index: 5;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
+.navBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 2em;
+}
+
 .navItem {
-    padding: 10px;
+    padding: 1em;
+    margin-left: 1em;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -23,17 +30,89 @@
     text-decoration: none;
 }
 
+#brand:hover {
+    background: #327A83;
+    color: whitesmoke;
+}
+
+#navPortfolio:hover {
+    background: #327A83;
+}
+
+#navContact:hover {
+    background: #FC4445;
+}
+
 #navAbout:hover {
     color: whitesmoke;
     text-decoration: none;
     background: #FC4445;
 }
 
-#brand {
-    font-family: Share Tech Mono;
-    font-size: 1.2em;
+#bars {
+    display: none;
 }
 
-.navBox {
-    padding: 10px;
+#showMenu {
+    display: none;
+    z-index: 5;
+}
+
+
+/* Icon Grow Rotate */
+.hvr-icon-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-icon-grow-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-icon-grow-rotate:hover .hvr-icon,
+.hvr-icon-grow-rotate:focus .hvr-icon,
+.hvr-icon-grow-rotate:active .hvr-icon {
+    -webkit-transform: scale(1.5) rotate(12deg);
+    transform: scale(1.5) rotate(12deg);
+}
+
+@media only screen and (max-width: 950px) {
+
+    #navPortfolio {
+        display: none;
+    }
+
+    #navContact {
+        display: none;
+    }
+
+    #navAbout {
+        display: none;
+    }
+
+    .navBox {
+        display: none;
+    }
+
+    #bars {
+        color: whitesmoke;
+        background: none;
+        display: inline;
+        position: absolute;
+        right: 2em;
+        border: none;
+    }
+
 }

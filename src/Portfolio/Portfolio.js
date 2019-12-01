@@ -19,19 +19,20 @@ export default function Portfolio() {
 
     return (
         <div id="portfolioSection" className="container-fluid section">
-            <div className="container-fluid center-align-text titleText" id="portfolio-box">
-                <div className="port-container">
-                    <h3>Portfolio</h3>
-                    <PortfolioItem
-                        id={portfolioItems[0].id}
-                        title={portfolioItems[0].title}
-                        descriptionWhat={portfolioItems[0].descriptionWhat}
-                        descriptionHow={portfolioItems[0].descriptionHow}
-                        imageDesktop={portfolioItems[0].imageDesktop}
-                        imageMobile={portfolioItems[0].imageMobile}
-                    />
-                </div>
+            <div className="port-container titleText">
+                <h3>Portfolio</h3>
+                <PortfolioItem
+                    id={portfolioItems[0].id}
+                    title={portfolioItems[0].title}
+                    descriptionWhat={portfolioItems[0].descriptionWhat}
+                    descriptionHow={portfolioItems[0].descriptionHow}
+                    imageDesktop={portfolioItems[0].imageDesktop}
+                    imageMobile={portfolioItems[0].imageMobile}
+                />
             </div>
-        </div>
+        </div >
     )
 }
+
+{/* <div className=
+                "container-fluid center-align-text titleText" id="portfolio-box"></div> */}
