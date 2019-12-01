@@ -5,6 +5,7 @@
 
 .container-life {
     position: relative;
+    width: 50vw;
 }
 
 .container-life:hover .overlay-life {
