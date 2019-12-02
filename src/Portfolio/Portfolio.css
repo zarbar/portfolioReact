@@ -3,100 +3,73 @@
     background-color: #327A83;
 }
 
-.container-life {
-    position: relative;
-    width: 50vw;
-}
-
-.container-life:hover .overlay-life {
-    opacity: 1;
-}
-
-.overlay-life {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #242424;
-    border-radius: 5px;
-}
-
-.text-life {
+.comingSoon {
     color: whitesmoke;
-    font-size: 12pt;
-    position: absolute;
-    font-family: 'Lato';
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 5px;
-}
-
-.port-container {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-    /* z-index: 2; */
-}
-
-.image-life {
-    width: 100%;
-    height: auto;
-    border: gray;
-    border-width: 1em;
-    border-style: solid;
-    border-radius: 5px;
-}
-
-@media screen and (max-width: 1170px) {
-    .container-life {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 985px) {
-    .container-life {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .container-life {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 710px) {
-    .text-life {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    #button-life {
-        margin: 0.2em;
-    }
-
-    .image-life {
-        display: block;
-        width: 100%;
-        height: 300px;
-        border: gray;
-        border-width: 1em;
-        border-style: solid;
-        border-radius: 5px;
-    }
-
+    font-family: 'Share Mono Tech';
+    font-size: 2em;
+    height: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .buttonBox {
     display: inline-block;
+}
+
+.projectGrid {
+    display: grid;
+    background: #343a40;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.projectGrid:hover>.itemOne {
+    opacity: 0;
+    z-index: 0;
+}
+
+.projectGrid:hover>.itemTwo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.projectDisplay {
+    text-align: center;
+}
+
+.portfolioImage {
+    max-width: 100%;
+    height: 60vh;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.itemOne {
+    opacity: 1;
+    grid-area: 1 / 1 / 2 / 2;
+    transition: 0.4s;
+}
+
+.itemTwo {
+    opacity: 0;
+    grid-area: 1 / 1 / 2 / 2;
+    background: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.projectTitle {
+    text-decoration: underline;
+    text-decoration: bold;
+    font-family: 'Share Tech Mono';
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width: 600px) {
+    .projectGrid {
+        margin: 10px 20vw;
+    }
 }

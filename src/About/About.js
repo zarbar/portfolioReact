@@ -4,7 +4,7 @@ import './About.css';
 export default function About() {
     return (
         <div className="container-fluid section" id="aboutSection">
-            <div class="container-fluid center-align-text titleText">
+            <div className="container-fluid center-align-text titleText">
                 <h3>Hi There!</h3>
             </div>
             <div id="aboutDescription">
@@ -14,8 +14,6 @@ export default function About() {
                     My previous experience is in communications and marketing. I was born and raised in London and spent 5 years living and working in Japan.
             </p>
             </div>
-
-
         </div>
     )
 }
