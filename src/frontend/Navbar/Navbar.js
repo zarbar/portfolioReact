@@ -6,33 +6,27 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPhone, faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Nav() {
-    const [showMenu, setShowMenu] = React.useState(false);
-
+    const [showMenu, setShowMenu] = React.useState('menuClosed');
 
     function menuClick() {
-        if (!showMenu) {
-            return setShowMenu(true)
-        } else {
-            setShowMenu(false);
-            document.querySelector('#showMenu').style.display = 'none';
-        }
+        showMenu === 'menuClosed' ? setShowMenu('menuOpen') :
+            setShowMenu('menuClosed')
     }
 
-    if (showMenu) {
-        document.querySelector('#showMenu').style.display = 'block';
-    }
+    React.useEffect(() => console.log(showMenu), [showMenu])
 
     return (
         <>
             <div id="navBarList">
-                <a className="navItem" id="brand" href="/">
+                <a className="navItem" id="brand" href="/" onClick={() => { menuClick(); }}>
                     <h5>Zara Kletz</h5></a>
 
-                <a className="navItem" id="navAbout" href="#aboutSection">About</a>
+                <a className="navItem" id="navAbout" href="#aboutSection" onClick={() => { menuClick(); }}>About</a>
 
-                <a className="navItem" id="navPortfolio" href="#portfolioSection">Portfolio</a>
+                <a className="navItem" id="navPortfolio" href="#portfolioSection" onClick={() => menuClick()}>
+                    Portfolio</a>
 
-                <a className="navItem" id="navContact" href="#contactFormSection">Contact</a>
+                <a className="navItem" id="navContact" href="#contactFormSection" onClick={() => menuClick()}>Contact</a>
 
                 <span className="navBox">
 
@@ -58,9 +52,10 @@ export default function Nav() {
                     <FontAwesomeIcon icon={faBars} className="hvr-icon" />
                 </button>
             </div >
-            <div id="showMenu">
-                <Menu />
+            <div id='showMenu' className={showMenu}>
+                <Menu menuClick={menuClick} />
             </div>
         </>
     )
 }
+

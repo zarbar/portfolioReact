@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './Navbar/Navbar';
-import Landing from './Landing/Landing';
-import About from './About/About';
-import Parallex from './Parallex/Parallex';
-import Portfolio from './Portfolio/Portfolio';
-import ContactForm from './ContactForm/ContactForm';
-import Footer from './Footer/Footer';
+import Nav from './frontend/Navbar/Navbar';
+import Landing from './frontend/Landing/Landing';
+import About from './frontend/About/About';
+import Parallex from './frontend/Parallex/Parallex';
+import Portfolio from './frontend/Portfolio/Portfolio';
+import ContactForm from './frontend/ContactForm/ContactForm';
+import Footer from './frontend/Footer/Footer';
 
 function App() {
   document.title = "Zara's Portfolio";

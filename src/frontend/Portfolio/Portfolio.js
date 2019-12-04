@@ -3,15 +3,15 @@ import './Portfolio.css';
 import PortfolioItemDisplay from './PortfolioItemDisplay';
 import PortfolioItemList from './PortfolioItemList';
 
-
 export default function Portfolio() {
 
     const rickMorty = PortfolioItemList()[0];
     let projectsComingSoon = ['FestiPal App', 'Kodflix', 'Banana Quiz', 'Before and After'];
+
     let renderProjectsComingSoon = projectsComingSoon.map((project) => {
         return (
             <PortfolioItemDisplay
-                comingSoon={true} projectTitle={project}
+                comingSoon={true} projectTitle={project} key={project}
             />
         )
     });

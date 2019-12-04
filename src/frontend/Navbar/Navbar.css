@@ -54,8 +54,15 @@
 }
 
 #showMenu {
-    display: none;
     z-index: 5;
+}
+
+.menuOpen {
+    display: block;
+}
+
+.menuClosed {
+    display: none;
 }
 
 

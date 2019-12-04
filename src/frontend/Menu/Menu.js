@@ -4,33 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-export default function Menu() {
-    const [showMenu, setShowMenu] = React.useState(true)
-
-    function menuItemClick() {
-        if (showMenu) {
-            setShowMenu(false);
-        } else {
-            setShowMenu(true);
-            document.querySelector('#showMenu').style.display = 'flex';
-        }
-    }
-
-    if (!showMenu) {
-        document.querySelector('#showMenu').style.display = 'none';
-    }
-
+export default function Menu({ menuClick }) {
 
     return (
         <div className='menu'>
 
 
             <div className='menuItems'>
-                <a className="menuItem topItem" href="#aboutSection" onClick={() => menuItemClick()}>About</a>
+                <a className="menuItem topItem" href="#aboutSection" onClick={() => menuClick()}>About</a>
 
-                <a className="menuItem" href="#portfolioSection" onClick={() => menuItemClick()}>Portfolio</a>
+                <a className="menuItem" href="#portfolioSection" onClick={() => menuClick()}>Portfolio</a>
 
-                <a className="menuItem" href="#contactFormSection" onClick={() => menuItemClick()}>Contact</a>
+                <a className="menuItem" href="#contactFormSection" onClick={() => menuClick()}>Contact</a>
 
             </div>
 
