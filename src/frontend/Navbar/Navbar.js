@@ -13,8 +13,6 @@ export default function Nav() {
             setShowMenu('menuClosed')
     }
 
-    React.useEffect(() => console.log(showMenu), [showMenu])
-
     return (
         <>
             <div id="navBarList">

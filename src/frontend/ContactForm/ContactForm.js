@@ -9,12 +9,10 @@ export default function ContactForm() {
 
 
     const submitForm = () => {
-        console.log({ name, email, organisation });
         fetch('/send', {
             method: "POST",
             body: JSON.stringify({ name, email, organisation }),
             headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
         })
@@ -64,7 +62,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="center-align-text">
-                        <button type="submit" className="btn" id="zara-button" onClick={() => submitForm()}>Submit</button>
+                        <button type="button" className="btn" id="zara-button" onClick={() => submitForm()}>Submit</button>
                     </div>
                 </Form>
             </div>

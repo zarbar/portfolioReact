@@ -16,6 +16,7 @@ export default function Menu({ menuClick }) {
                 <a className="menuItem" href="#portfolioSection" onClick={() => menuClick()}>Portfolio</a>
 
                 <a className="menuItem" href="#contactFormSection" onClick={() => menuClick()}>Contact</a>
+                
 
             </div>
 
