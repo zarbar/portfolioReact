@@ -6,28 +6,34 @@ export default function ContactForm() {
     const [name, setName] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [organisation, setOrganisation] = React.useState('');
-
-
-    const submitForm = () => {
-        fetch('/send', {
-            method: "POST",
-            body: JSON.stringify({ name, email, organisation }),
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        })
-            .then((response) => (response.json()))
+    const [status, setStatus] = React.useState('');
+    const submitForm = (ev) => {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                setStatus("SUCCESS");
+            } else {
+                setStatus("ERROR");
+            }
+        };
+        xhr.send(data);
     }
-
     return (
         <div id="contactFormSection" className="container-fluid section">
-            <div className="container-fluid center-align-text titleText">
-                <h3>Find out when I'm availabile for work...</h3>
-            </div>
+            <h3>Find out when I'm availabile for work...</h3>
             <div className="container" id="contact-form">
-
-                <Form onSubmit={() => submitForm()} method="POST">
-
+                <Form
+                    onSubmit={submitForm}
+                    action="https://formspree.io/mgeowlnb"
+                    method="POST"
+                >
                     <div className="form-group" id="form-personalise">
                         <label htmlFor="FullName">Name:</label>
                         <input
@@ -37,6 +43,7 @@ export default function ContactForm() {
                             placeholder="Namey McNamerson"
                             value={name}
                             onChange={e => setName(e.target.value)}
+                            name="name"
                         />
                     </div>
                     <div className="form-group" id="form-personalise">
@@ -47,9 +54,9 @@ export default function ContactForm() {
                             id="email form-personalise" placeholder="Namey@e.mail"
                             value={email}
                             onChange={e => setEmail(e.target.value)}
+                            name="_replyto"
                         />
                     </div>
-
                     <div className="form-group" id="form-personalise">
                         <label htmlFor="Organisation" id="organisation">Organisation:</label>
                         <input
@@ -58,11 +65,12 @@ export default function ContactForm() {
                             id="Organisation form-personalise" placeholder="Where you work"
                             value={organisation}
                             onChange={e => setOrganisation(e.target.value)}
+                            name="organisation"
                         />
                     </div>
-
-                    <div className="center-align-text">
-                        <button type="button" className="btn" id="zara-button" onClick={() => submitForm()}>Submit</button>
+                    <div id='submit-form-section' className="center-align-text">
+                        {status === "SUCCESS" ? <h3>Thanks!</h3> : <button className="zara-button-blue">Submit</button>}
+                        {status === "ERROR" && <h3>Ooops! There was an error.</h3>}
                     </div>
                 </Form>
             </div>

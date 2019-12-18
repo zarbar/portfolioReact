@@ -57,10 +57,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.titleText {
-  padding-top: 65px;
-}
-
 p {
   font-family: Lato;
 }
@@ -72,44 +68,37 @@ p {
   padding-bottom: 65px;
 }
 
-#zara-button {
+.zara-button-blue {
   font-family: Share Tech Mono;
   color: black;
   margin: 0.8em;
   transition-duration: 0.4s;
   border: 2px solid #327A83;
   background-color: whitesmoke;
+  border-radius: 3px;
 }
 
-#zara-button:hover {
+.zara-button-blue:hover {
   background-color: #327A83;
   color: whitesmoke;
 }
 
-#zara-button {
-  font-family: Share Tech Mono;
-  color: black;
-  margin: 0.8em;
-  transition-duration: 0.4s;
-  border: 2px solid #327A83;
-  background-color: whitesmoke;
-}
-
-#zara-button:hover {
+.zara-button-blue:hover {
   background-color: #327A83;
   color: whitesmoke;
 }
 
-#zara-button-red {
+.zara-button-red {
   font-family: Share Tech Mono;
   color: black;
   margin: 0.8em;
   transition-duration: 0.4s;
   border: 2px solid #FC4445;
   background-color: whitesmoke;
+  border-radius: 3px;
 }
 
-#zara-button-red:hover {
+.zara-button-red:hover {
   background-color: #FC4445;
   color: whitesmoke;
 }

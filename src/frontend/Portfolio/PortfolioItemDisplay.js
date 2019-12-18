@@ -1,6 +1,5 @@
 import React from 'react';
 import './Portfolio.css';
-import Button from 'react-bootstrap/Button';
 
 export default function PortfolioItem(props) {
 
@@ -38,18 +37,17 @@ export default function PortfolioItem(props) {
 
                     <div className='flexItem'>
                         <div className="buttonBox">
-                            <Button type="button"
-                                id="zara-button-red"
+                            <button type="button"
+                                className="zara-button-red"
                                 href="https://total-rickall-two-liard.now.sh/">
                                 Visit Website
-                        </Button>
+                        </button>
 
-                            <Button type="button"
-                                className="btn"
-                                id="zara-button-red"
+                            <button type="button"
+                                className="zara-button-red"
                                 href="https://github.com/zarbar/Total-Rickall">
                                 View Code
-                        </Button>
+                        </button>
                         </div>
                     </div>
                 </div>

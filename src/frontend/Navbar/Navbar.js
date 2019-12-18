@@ -16,15 +16,15 @@ export default function Nav() {
     return (
         <>
             <div id="navBarList">
-                <a className="navItem" id="brand" href="/" onClick={() => { menuClick(); }}>
+                <a className="navItem" id="brand" href="/">
                     <h5>Zara Kletz</h5></a>
 
-                <a className="navItem" id="navAbout" href="#aboutSection" onClick={() => { menuClick(); }}>About</a>
+                <a className="navItem" id="navAbout" href="#aboutSection">About</a>
 
-                <a className="navItem" id="navPortfolio" href="#portfolioSection" onClick={() => menuClick()}>
+                <a className="navItem" id="navPortfolio" href="#portfolioSection">
                     Portfolio</a>
 
-                <a className="navItem" id="navContact" href="#contactFormSection" onClick={() => menuClick()}>Contact</a>
+                <a className="navItem" id="navContact" href="#contactFormSection">Contact</a>
 
                 <span className="navBox">
 

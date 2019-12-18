@@ -6,6 +6,5 @@ export default function Landing() {
         <div className="container-fluid parallax-background" id="landing-page">
             <h1>Hello, I'm Zara</h1>
             <h2>A web developer in London</h2>
-            <span id="home"></span>
         </div>)
 }

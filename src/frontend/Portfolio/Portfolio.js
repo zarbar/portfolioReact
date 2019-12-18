@@ -18,14 +18,12 @@ export default function Portfolio() {
 
     return (
         <div id="portfolioSection" className="container-fluid section">
-            <div className="port-container titleText">
-                <h3>Portfolio</h3>
-                <PortfolioItemDisplay
-                    item={rickMorty}
-                    comingSoon={false}
-                />
-                {renderProjectsComingSoon}
-            </div>
-        </div >
+            <h3>Portfolio</h3>
+            <PortfolioItemDisplay
+                item={rickMorty}
+                comingSoon={false}
+            />
+            {renderProjectsComingSoon}
+        </div>
     )
 }

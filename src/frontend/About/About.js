@@ -4,9 +4,7 @@ import './About.css';
 export default function About() {
     return (
         <div className="container-fluid section" id="aboutSection">
-            <div className="container-fluid center-align-text titleText">
-                <h3>Hi There!</h3>
-            </div>
+            <h3>Hi There!</h3>
             <div id="aboutDescription">
                 <p>
                     I began training as a front and back end developer in April 2019. I use HTML 5, CSS (Bootstrap), Javascript (React, Jquery, Handlebars, Node, Express) for front-end development, Node and Express for back-end development and MySQL and MongoDB for databases.<br /><br />
