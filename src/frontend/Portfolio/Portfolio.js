@@ -6,7 +6,8 @@ import PortfolioItemList from './PortfolioItemList';
 export default function Portfolio() {
 
     const rickMorty = PortfolioItemList()[0];
-    let projectsComingSoon = ['FestiPal App', 'Kodflix', 'Banana Quiz', 'Before and After'];
+    const kodflix = PortfolioItemList()[1];
+    let projectsComingSoon = ['FestiPal App', 'Banana Quiz', 'Before and After'];
 
     let renderProjectsComingSoon = projectsComingSoon.map((project) => {
         return (
@@ -21,6 +22,10 @@ export default function Portfolio() {
             <h3>Portfolio</h3>
             <PortfolioItemDisplay
                 item={rickMorty}
+                comingSoon={false}
+            />
+            <PortfolioItemDisplay
+                item={kodflix}
                 comingSoon={false}
             />
             {renderProjectsComingSoon}

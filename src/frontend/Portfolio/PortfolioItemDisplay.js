@@ -37,17 +37,17 @@ export default function PortfolioItem(props) {
 
                     <div className='flexItem'>
                         <div className="buttonBox">
-                            <button type="button"
+                            <a
                                 className="zara-button-red"
-                                href="https://total-rickall-two-liard.now.sh/">
+                                href={item.website}>
                                 Visit Website
-                        </button>
+                        </a>
 
-                            <button type="button"
+                            <a
                                 className="zara-button-red"
-                                href="https://github.com/zarbar/Total-Rickall">
+                                href={item.code}>
                                 View Code
-                        </button>
+                        </a>
                         </div>
                     </div>
                 </div>
