@@ -1,7 +1,5 @@
-import totalRickall from './totalRickall.jpg';
-import totalRickallMobile from './totalRickallMini.jpg';
-import rickMorty from './RickMorty.jpg';
-import glow from './glow.jpg';
+import rickMorty from './rickMortyScreenshot.png';
+import glow from './kodflixScreenshot.png';
 
 export default function PortfolioItemList() {
 
@@ -13,8 +11,6 @@ export default function PortfolioItemList() {
                 descriptionWhat: 'A simple game I designed based on the \'Total Rickall\' episode of Rick & Morty.',
                 descriptionHow: 'I used HTML, CSS, Javascript and jQuery. I pulled data from a public Rick & Morty API.',
                 image: rickMorty,
-                imageDesktop: totalRickall,
-                imageMobile: totalRickallMobile,
                 website: 'https://total-rickall-two-liard.now.sh/',
                 code: 'https://github.com/zarbar/Total-Rickall',
             },

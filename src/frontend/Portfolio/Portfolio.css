@@ -37,12 +37,17 @@
 
 .projectDisplay {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .portfolioImage {
     max-width: 100%;
     height: 60vh;
     border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
 }
 
 .itemOne {
@@ -72,5 +77,12 @@
 @media screen and (min-width: 600px) {
     .projectGrid {
         margin: 10px 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolioImage {
+        width: auto;
+        height: 30vh;
     }
 }
