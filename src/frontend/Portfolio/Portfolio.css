@@ -73,3 +73,10 @@
         margin: 10px 20vw;
     }
 }
+
+@media (max-width: 600px) {
+    .portfolioImage {
+        width: auto;
+        height: 30vh;
+    }
+}
