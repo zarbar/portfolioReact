@@ -39,13 +39,13 @@ export default function PortfolioItem(props) {
                         <div className="buttonBox">
                             <a
                                 className="zara-button-red"
-                                href={item.website}>
+                                href={item.website} target="_blank" rel="noreferrer">
                                 Visit Website
                         </a>
 
                             <a
                                 className="zara-button-red"
-                                href={item.code}>
+                                href={item.code} target="_blank" rel="noreferrer">
                                 View Code
                         </a>
                         </div>
