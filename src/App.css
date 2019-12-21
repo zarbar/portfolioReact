@@ -96,6 +96,7 @@ p {
   border: 2px solid #FC4445;
   background-color: whitesmoke;
   border-radius: 3px;
+  padding: 1vw;
 }
 
 .zara-button-red:hover {
