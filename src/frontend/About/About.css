@@ -13,3 +13,23 @@ h3 {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.aboutAnchor {
+    color: rgb(255, 217, 0);
+}
+
+#aboutSection h3::selection {
+    background: #343a40;
+}
+
+#aboutSection p::selection {
+    background: #343a40;
+}
+
+.aboutAnchor::selection {
+    background: #343a40;
+}
+
+#aboutSection p br::selection {
+    background: rgba(252, 68, 69);
+}

@@ -86,3 +86,7 @@
         height: 30vh;
     }
 }
+
+#portfolioSection h3::selection {
+    background: #343a40;
+}

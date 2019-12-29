@@ -15,3 +15,16 @@
 #submit-form-section {
     padding-bottom: 2vh;
 }
+
+#contactFormSection h3::selection {
+    background: #343a40;
+}
+
+#form-personalise label::selection {
+    background: #343a40;
+}
+
+#form-personalise input::selection {
+    background: #343a40;
+    color: yellow;
+}
