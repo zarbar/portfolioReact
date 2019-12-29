@@ -29,5 +29,15 @@ h2 {
     font-weight: normal;
     font-weight: bold;
     color: whitesmoke;
+}
 
+#landing-page h1::selection {
+    color: #343a40;
+    background: rgb(255, 217, 0);
+    text-shadow: 5px 5px 5px whitesmoke;
+}
+
+#landing-page h2::selection {
+    color: #343a40;
+    background: rgb(255, 217, 0);
 }

@@ -9,3 +9,16 @@ footer {
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
+
+#foot h5::selection {
+    color: #343a40;
+    background: yellow;
+}
+
+.footer-anchor {
+    color: yellow;
+}
+
+.footer-anchor:hover {
+    color: yellow;
+}

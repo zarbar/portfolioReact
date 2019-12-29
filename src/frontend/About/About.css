@@ -9,7 +9,44 @@ h3 {
     padding-top: 10vh;
 }
 
+.logoIcon {
+    height: 50px;
+    width: auto;
+    margin: 1vw;
+}
+
 #aboutDescription {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+#aboutIcons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutAnchor {
+    color: rgb(255, 217, 0);
+}
+
+.aboutAnchor:hover {
+    color: rgb(53, 245, 203);
+    text-decoration: none;
+}
+
+#aboutSection h3::selection {
+    background: #343a40;
+}
+
+#aboutSection p::selection {
+    background: #343a40;
+}
+
+.aboutAnchor::selection {
+    background: #343a40;
+}
+
+#aboutSection p br::selection {
+    background: rgba(252, 68, 69);
 }
