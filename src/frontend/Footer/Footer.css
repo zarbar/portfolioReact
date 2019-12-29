@@ -14,3 +14,11 @@ footer {
     color: #343a40;
     background: yellow;
 }
+
+.footer-anchor {
+    color: yellow;
+}
+
+.footer-anchor:hover {
+    color: yellow;
+}
