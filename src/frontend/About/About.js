@@ -27,14 +27,15 @@ export default function About() {
                 </div>
                 <h3>My Story</h3>
                 <p>
-                    Having grown-up in London with a background in Anthropology and International Relations, I followed my curiosity for other cultures to Japan, where I lived, travelled and worked for five years. I went from teaching high school English in a remote fishing town to working in the communications department for the School of Science at The University of Tokyo.
+                    Having grown-up in London with a background in Anthropology and International Relations, I followed my curiosity for other cultures to Japan where I lived, travelled and worked for five years. I went from teaching high school English in a remote fishing town to working in the communications department for the School of Science at The University of Tokyo.
 
-                    I worked alongside web developers to create sites for the university, peaking my interest in tech. One of the highlights was using Google Analytics for market research and completing the <a className='aboutAnchor' href='https://analytics.google.com/analytics/academy/' target='_blank' rel='noopener noreferrer'>Google Analytics Academy</a>  courses online.
+                    I worked alongside web developers creating pages for the university website, peaking my interest in tech. Using Google Analytics for market research and completing the <a className='aboutAnchor' href='https://analytics.google.com/analytics/academy/' target='_blank' rel='noopener noreferrer'>Google Analytics Academy</a>  course online was a major highlight.
                     <br /><br />
-                    Upon returning to the UK, I again started working in a communications and marketing role alongside web developers and IT professionals. By this point my job-envy was undeniable - I needed to get a piece of the action and unravel the mysteries of their work. In early 2019, I decided to finally take the plunge: start afresh and learn to code!
+                    Upon returning to the UK, I again started working in a communications and marketing role alongside web developers and IT professionals. By this point my job-envy was undeniable - I needed to get a piece of the action and unravel the mysteries behind their work. In early 2019, I finally decided to take the plunge: start afresh and learn to code!
                     <br /><br />
                     I completed the <a className='aboutAnchor' href='https://www.codecademy.com/learn/paths/web-development' target="_blank" rel="noopener noreferrer"> Codecademy Web Development Course</a> covering HTML5, CSS3, Javascript, Node.Js, APIs, SQL and TDD methods. This included various frameworks and libraries such as Handlebars, React, jQuery, Express, Chai and Mocha. In October 2019, I joined <a className='aboutAnchor' href='https://kodiri.com/bootcamp' target="_blank" rel="noopener noreferrer">Kodiri</a> - a two-month intensive coding bootcamp covering mobile-first UI and UX design with HTML5 and CSS3, Javascript, backend APIs, NodeJs, ExpressJs, MongoDB and cloud deployment with Heroku and ZEIT Now.
-                    <br /><br />I've enjoyed every moment of my coding journey so far and am excited for what's to come.<br />👩‍🦱
+                    <br /><br />I've enjoyed every moment of my coding journey so far and am excited for what's to come.<br />
+                    &#128105;
             </p>
             </div>
         </div>
