@@ -1,6 +1,7 @@
 import rickMorty from './rickMortyScreenshot.png';
 import glow from './kodflixScreenshot.png';
 import festiPal from './festiPal.png';
+import banana from './bananaQuiz.png';
 
 export default function PortfolioItemList() {
 
@@ -23,6 +24,15 @@ export default function PortfolioItemList() {
                 image: festiPal,
                 website: 'http://zara-festipal.herokuapp.com/',
                 code: 'https://github.com/zarbar/festival',
+            },
+            {
+                id: 'banana',
+                title: 'Banana Quiz',
+                descriptionWhat: 'I created a Buzzfeed-style quiz. Answer 8 questions to discover what humans have been trying to learn since the dawn of time...What type of banana am I?',
+                descriptionHow: 'This was built using React and has been deployed using Github Pages.',
+                image: banana,
+                website: 'https://zarbar.github.io/bananaQuiz/#/',
+                code: 'https://github.com/zarbar/bananaQuiz',
             },
             {
                 id: 'kodflix',
