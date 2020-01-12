@@ -11,7 +11,7 @@ export default function PortfolioItem(props) {
                     {props.projectTitle}
                 </div>
                 <div className='itemTwo'>
-                    <p><em>coming soon</em></p>
+                    <p><em>coming real soon!</em></p>
                 </div>
             </div>
         )
