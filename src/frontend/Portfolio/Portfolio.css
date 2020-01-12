@@ -67,19 +67,26 @@
 }
 
 .projectTitle {
+    text-decoration: underline;
     text-decoration: bold;
     font-family: 'Share Tech Mono';
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 5%;
 }
 
-@media screen and (min-width: 600px) {
+.projectTitleSoon {
+    text-decoration: bold;
+    font-family: 'Share Tech Mono';
+    font-size: 3vh;
+}
+
+@media screen and (min-width: 1050px) {
     .projectGrid {
         margin: 10px 20vw;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
     .portfolioImage {
         width: auto;
         height: 30vh;
