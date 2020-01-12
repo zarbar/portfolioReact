@@ -7,7 +7,7 @@ export default function PortfolioItem(props) {
     if (props.comingSoon) {
         return (
             <div className="projectGrid comingSoon">
-                <div className='itemOne projectTitle' >
+                <div className='itemOne projectTitleSoon' >
                     {props.projectTitle}
                 </div>
                 <div className='itemTwo'>
