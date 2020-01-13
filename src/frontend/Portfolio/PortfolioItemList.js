@@ -2,6 +2,7 @@ import rickMorty from './rickMortyScreenshot.png';
 import glow from './kodflixScreenshot.png';
 import festiPal from './festiPal.png';
 import banana from './bananaQuiz.png';
+import whereWorld from './whereWorld.png';
 
 export default function PortfolioItemList() {
 
@@ -33,6 +34,15 @@ export default function PortfolioItemList() {
                 image: banana,
                 website: 'https://zarbar.github.io/bananaQuiz/#/',
                 code: 'https://github.com/zarbar/bananaQuiz',
+            },
+            {
+                id: 'whereWorld',
+                title: 'Where In The World?',
+                descriptionWhat: 'Enter a longitude and latitude to generate a unique combinaion of three images representing its what3words location.',
+                descriptionHow: 'Built using the What3Words API and the Pixabay API.',
+                image: whereWorld,
+                website: 'https://zarbar.github.io/WhereInTheWorld/',
+                code: 'https://github.com/zarbar/WhereInTheWorld'
             },
             {
                 id: 'kodflix',
