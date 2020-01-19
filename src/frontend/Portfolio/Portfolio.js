@@ -22,7 +22,7 @@ export default function Portfolio() {
 
     return (
         <div id="portfolioSection" className="container-fluid section">
-            <h3>Portfolio</h3>
+            <h2 className='sectionHeader'>Portfolio</h2>
             <PortfolioItemDisplay
                 item={rickMorty}
                 comingSoon={false}
