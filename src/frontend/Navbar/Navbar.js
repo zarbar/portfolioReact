@@ -16,7 +16,7 @@ export default function Nav() {
     return (
         <>
             <div id="navBarList">
-                <a className="navItem" id="brand" href="/">
+                <a className="navItem" id="brand" href="#landing-page">
                     <h5>Zara Kletz</h5></a>
 
                 <a className="navItem" id="navAbout" href="#aboutSection">About</a>
