@@ -13,14 +13,16 @@ export default function Nav() {
             setShowMenu('menuClosed');
     }
 
-    // React.useCallback((showMenu) => {
-    //     changeMenu(showMenu);
-    // }, [changeMenu])
+    function headerClick() {
+        if (showMenu === 'menuOpen') {
+            setShowMenu('menuClosed');
+        }
+    }
 
     return (
         <>
             <div id="navBarList">
-                <a className="navItem" id="brand" href="#landing-page" onClick={() => menuClick()}>
+                <a className="navItem" id="brand" href="#landing-page" onClick={() => headerClick()}>
                     <h5>Zara Kletz</h5></a>
 
                 <a className="navItem" id="navAbout" href="#aboutSection">About</a>
