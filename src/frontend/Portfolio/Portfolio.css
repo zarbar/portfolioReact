@@ -95,3 +95,7 @@
 #portfolioSection h3::selection {
     background: #343a40;
 }
+
+.noHover {
+    pointer-events: none !important;
+}

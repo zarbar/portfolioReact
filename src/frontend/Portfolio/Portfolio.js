@@ -15,7 +15,9 @@ export default function Portfolio() {
     let renderProjectsComingSoon = projectsComingSoon.map((project) => {
         return (
             <PortfolioItemDisplay
-                comingSoon={true} projectTitle={project} key={project}
+                comingSoon={true}
+                projectTitle={project}
+                key={project}
             />
         )
     });
@@ -35,7 +37,6 @@ export default function Portfolio() {
                 item={bananaQuiz}
                 comingSoon={false}
             />
-
 
             <PortfolioItemDisplay
                 item={whereWorld}

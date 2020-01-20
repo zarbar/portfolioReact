@@ -3,6 +3,8 @@ import './Portfolio.css';
 
 export default function PortfolioItem(props) {
 
+    const [noHover] = React.useState('projectGrid');
+
     let item = props.item;
     if (props.comingSoon) {
         return (
@@ -17,11 +19,9 @@ export default function PortfolioItem(props) {
         )
     }
 
-
     return (
         <>
-            <div className="projectGrid">
-
+            <div className={noHover}>
                 <div className="projectDisplay itemOne">
                     <img src={item.image} alt={props.id} className='portfolioImage' />
                 </div>
