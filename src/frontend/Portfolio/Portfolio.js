@@ -15,14 +15,16 @@ export default function Portfolio() {
     let renderProjectsComingSoon = projectsComingSoon.map((project) => {
         return (
             <PortfolioItemDisplay
-                comingSoon={true} projectTitle={project} key={project}
+                comingSoon={true}
+                projectTitle={project}
+                key={project}
             />
         )
     });
 
     return (
         <div id="portfolioSection" className="container-fluid section">
-            <h3>Portfolio</h3>
+            <h2 className='sectionHeader'>Portfolio</h2>
             <PortfolioItemDisplay
                 item={rickMorty}
                 comingSoon={false}
@@ -35,7 +37,6 @@ export default function Portfolio() {
                 item={bananaQuiz}
                 comingSoon={false}
             />
-
 
             <PortfolioItemDisplay
                 item={whereWorld}

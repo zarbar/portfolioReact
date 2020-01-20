@@ -9,6 +9,11 @@ h3 {
     padding-top: 10vh;
 }
 
+.sectionHeader {
+    padding-bottom: 3vh;
+    padding-top: 10vh;
+}
+
 .logoIcon {
     height: 50px;
     width: auto;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   height: 100%;
@@ -62,6 +66,7 @@ p {
 }
 
 .section {
+  padding-top: 5vh;
   color: whitesmoke;
   background-color: #FC4445;
   border-radius: 3px;

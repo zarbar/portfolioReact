@@ -15,7 +15,7 @@ export default function About() {
 
     return (
         <div className="container-fluid section" id="aboutSection">
-            <h3>Hi There!</h3>
+            <h2 className='sectionHeader'>Hi There!</h2>
             <div id="aboutDescription">
                 <p>
 
