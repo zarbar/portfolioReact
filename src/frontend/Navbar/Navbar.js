@@ -4,8 +4,10 @@ import Menu from '../Menu/Menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPhone, faBars } from '@fortawesome/free-solid-svg-icons';
+import { connect } from 'react-redux';
 
-export default function Nav() {
+
+function Nav(props) {
     const [showMenu, setShowMenu] = React.useState('menuClosed');
 
     function menuClick() {
@@ -13,9 +15,15 @@ export default function Nav() {
             setShowMenu('menuClosed');
     }
 
+    React.useEffect(() => {
+        props.toggleMenu(showMenu);
+        // eslint-disable-next-line
+    }, [showMenu])
+
     function headerClick() {
         if (showMenu === 'menuOpen') {
             setShowMenu('menuClosed');
+            props.toggleMenu(showMenu);
         }
     }
 
@@ -63,3 +71,18 @@ export default function Nav() {
     )
 }
 
+const mapStateToProps = (state) => {
+    return {
+        menu: state.menu
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        toggleMenu: (showMenu) => {
+            dispatch({ type: 'TOGGLE_MENU', menu: showMenu })
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nav)
