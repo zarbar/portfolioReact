@@ -1,27 +1,32 @@
 import React from 'react';
 import './Portfolio.css';
+import { connect } from 'react-redux';
 
-export default function PortfolioItem(props) {
+function PortfolioItem(props) {
+    const [noHover, setNoHover] = React.useState('projectGrid');
+    React.useEffect(
+        () => {
+            if (props.menu === 'menuOpen') { setNoHover('projectGrid noHover') }
+            else if (props.menu === 'menuClosed') { setNoHover('projectGrid') }
+        }, [props, noHover])
 
     let item = props.item;
     if (props.comingSoon) {
         return (
             <div className="projectGrid comingSoon">
-                <div className='itemOne projectTitle' >
+                <div className='itemOne projectTitleSoon' >
                     {props.projectTitle}
                 </div>
                 <div className='itemTwo'>
-                    <p><em>coming soon</em></p>
+                    <p><em>coming real soon!</em></p>
                 </div>
             </div>
         )
     }
 
-
     return (
         <>
-            <div className="projectGrid">
-
+            <div className={noHover}>
                 <div className="projectDisplay itemOne">
                     <img src={item.image} alt={props.id} className='portfolioImage' />
                 </div>
@@ -55,3 +60,11 @@ export default function PortfolioItem(props) {
         </>
     );
 }
+
+const mapStateToProps = (state) => {
+    return {
+        menu: state.menu
+    }
+}
+
+export default connect(mapStateToProps)(PortfolioItem)
