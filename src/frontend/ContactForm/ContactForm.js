@@ -27,7 +27,7 @@ export default function ContactForm() {
     }
     return (
         <div id="contactFormSection" className="container-fluid section">
-            <h3>Find out when I'm availabile for work...</h3>
+            <h3>Find out when I'm available for work...</h3>
             <div className="container" id="contact-form">
                 <Form
                     onSubmit={submitForm}
